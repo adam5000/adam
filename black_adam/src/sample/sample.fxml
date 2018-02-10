@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-image:url('sample/black.jpg');" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="700.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="krupier" layoutX="33.0" layoutY="45.0" prefWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="gracz" layoutX="558.0" layoutY="45.0" prefWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Button fx:id="dob" layoutX="296.0" layoutY="65.0" mnemonicParsing="false" onAction="#dobierz" prefWidth="100.0" text="Dobierz" textFill="#da0d0d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="wys" layoutX="555.0" layoutY="307.0" mnemonicParsing="false" onAction="#wystarczy" prefWidth="100.0" text="Wystarczy" textFill="#da0d0d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TextField fx:id="stawiasz" layoutX="169.0" layoutY="371.0" prefWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Button fx:id="postaw" layoutX="33.0" layoutY="307.0" mnemonicParsing="false" onAction="#postawPLN" prefWidth="100.0" text="Postaw" textFill="#da0d0d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TextField fx:id="posiadasz" layoutX="458.0" layoutY="371.0" prefWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Label layoutX="319.0" layoutY="376.0" text="Posiadasz PLN">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="30.0" layoutY="5.0" text="Krupier ma pkt">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="559.0" layoutY="5.0" text="Gracz ma pkt">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="wyn" layoutX="195.0" layoutY="-5.0" text="Wynik rozgrywki" textFill="#eee70e" wrapText="true">
+               <font>
+                  <Font name="Bodoni MT Black" size="35.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="376.0" text="Stawiasz PLN">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="142.0" layoutY="50.0" text="i zakryta">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children></Pane>
+   </children>
+</GridPane>

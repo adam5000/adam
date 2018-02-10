@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="555.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="163.0" minWidth="84.0" prefWidth="150.0" />
+      <ColumnConstraints maxWidth="213.0" minWidth="134.0" prefWidth="155.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="33.0" prefHeight="33.0" />
+      <RowConstraints maxHeight="33.0" prefHeight="33.0" />
+      <RowConstraints maxHeight="33.0" prefHeight="33.0" />
+      <RowConstraints maxHeight="50.0" prefHeight="50.0" />
+   </rowConstraints>
+   <children>
+      <RadioButton fx:id="weC" accessibleRole="TOGGLE_BUTTON" mnemonicParsing="false" onAction="#start" text="Celcius" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+         <toggleGroup>
+            <ToggleGroup fx:id="grupaWe" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="weF" mnemonicParsing="false" onAction="#start" text="Fahrenheit" toggleGroup="$grupaWe" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin></RadioButton>
+      <RadioButton fx:id="weK" mnemonicParsing="false" onAction="#start" text="Kelvin" toggleGroup="$grupaWe" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin></RadioButton>
+      <RadioButton fx:id="wyC" mnemonicParsing="false" onAction="#start" prefHeight="21.0" prefWidth="130.0" text="Celcius" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupaWy" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="wyK" mnemonicParsing="false" onAction="#start" text="Kelvin" toggleGroup="$grupaWy" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <RadioButton fx:id="wyF" mnemonicParsing="false" onAction="#start" text="Fahrenheit" toggleGroup="$grupaWy" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label text="Output" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="90.0" />
+         </GridPane.margin></Label>
+      <Label text="Input Scale" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="28.0" />
+         </GridPane.margin></Label>
+      <Label prefHeight="21.0" prefWidth="124.0" text="Output Scale" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="27.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="we" alignment="CENTER" GridPane.columnIndex="1" />
+      <Label text="Input">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="105.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="wy" alignment="CENTER" prefHeight="21.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</GridPane>
